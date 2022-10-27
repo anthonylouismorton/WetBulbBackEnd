@@ -6,7 +6,12 @@
 import scrapy
 
 
-class WetbulbbackendItem(scrapy.Item):
+class WeatherItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    barometer = scrapy.Field()
+    windspeed = scrapy.Field()
+    humidity = scrapy.Field()
+    temperature = scrapy.Field()
+
     pass
